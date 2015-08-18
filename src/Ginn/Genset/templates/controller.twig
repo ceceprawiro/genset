@@ -1,0 +1,28 @@
+{% autoescape false %}
+<?php
+defined('BASEPATH') or die();
+
+class {{ name|capitalize }} extends MY_Controller
+{
+    public function __construct()
+    {
+        parent::__construct();
+        $this->load->model('model_{{name}}');
+    }
+
+    public function index()
+    {}
+
+    public function add()
+    {}
+
+    public function read()
+    {}
+
+    public function edit()
+    {}
+
+    public function delete()
+    {}
+}
+{% endautoescape %}
