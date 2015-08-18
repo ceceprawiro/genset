@@ -1,0 +1,2 @@
+# genset
+Generator for Codeigniter
